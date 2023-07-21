@@ -1,0 +1,61 @@
+---
+name: CheckBox
+route: /CheckBox
+menu: Components
+---
+
+import { Playground, Props } from 'docz'
+import { CheckBox } from './checkBox.tsx'
+
+# CheckBox
+
+The CheckBox component allows users to select or deselect options in a list of choices. It provides a customizable and accessible interface to indicate selection status.
+
+### Best practices
+
+- Use checkboxes when users can select one or multiple options from a list.
+- Clearly label the checkbox to indicate what option it represents.
+- Ensure checkboxes have appropriate spacing and are easy to tap on mobile devices.
+
+### Props
+
+<Props of={CheckBox} />
+
+<Playground>
+  <CheckBox checked={false} size="large" radius="extra small" color="grey" />
+</Playground>
+
+### color
+
+<Playground>
+  <CheckBox checked={false} size="large" radius="extra small" color="red" />
+</Playground>
+
+### label
+
+<Playground>
+  <CheckBox checked={false} size="large" radius="extra small" color="grey" label="Enable Notifications" />
+</Playground>
+
+### checked state
+
+<Playground>
+  <CheckBox checked={true} size="large" radius="extra small" color="green" />
+</Playground>
+
+### radius
+
+<Playground>
+  <CheckBox checked={false} size="large" radius="extra large" color="blue" />
+</Playground>
+
+### Basic Usage
+
+```jsx
+<CheckBox
+  checked={false}
+  size="large"
+  radius="extra small"
+/>
+
+```
